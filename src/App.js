@@ -7,9 +7,12 @@ import Error from "./pages/Error";
 
 import { Route, Switch } from "react-router-dom";
 
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <>
+      <Navbar></Navbar>
       <Switch>
         {/* here exact is preventing home page to display in other pages as all pages match '/' & for other it's to prevent any future mistake (exact matches exact path mentioned */}
         <Route exact path="/" component={Home} />
